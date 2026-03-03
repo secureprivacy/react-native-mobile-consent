@@ -1,6 +1,6 @@
 {
   "name": "@secureprivacy/react-native-mobile-consent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Secure Privacy React Native SDK for Android. Collect, manage, and signal user consent (GDPR, CCPA) in React Native apps.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
@@ -30,7 +30,7 @@
   ],
   "scripts": {
     "clean": "del-cli android/build example/android/build",
-    "prepare": "bob build",
+    "prepare": "npx react-native-builder-bob build",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
@@ -47,6 +47,10 @@
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://secureprivacy.ai/contact-us"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/secureprivacy/react-native-mobile-consent.git"
   },
   "homepage": "https://secureprivacy.ai/",
   "publishConfig": {
