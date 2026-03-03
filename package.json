@@ -1,6 +1,6 @@
 {
   "name": "@secureprivacy/react-native-mobile-consent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Secure Privacy React Native SDK for Android. Collect, manage, and signal user consent (GDPR, CCPA) in React Native apps.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
