@@ -1,0 +1,1 @@
+{"version":3,"file":"SPBaseModel.d.ts","sourceRoot":"","sources":["../../../../src/models/SPBaseModel.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,2BAA2B,CAAC;AAEhE,8BAAsB,WAAY,YAAW,cAAc;IACzD,QAAQ,CAAC,MAAM,IAAI,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC;IAE1C,YAAY,IAAI,MAAM;CAWvB"}

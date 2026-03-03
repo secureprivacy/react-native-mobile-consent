@@ -1,0 +1,1 @@
+{"version":3,"names":["Strings","Object","freeze","fatalError","errorCode"],"sourceRoot":"../../../src","sources":["support/Strings.ts"],"mappings":";;AAAA;AACA;AACA;AACA,OAAO,MAAMA,OAAO,GAAGC,MAAM,CAACC,MAAM,CAAC;EACnC;AACF;AACA;AACA;AACA;AACA;EACEC,UAAUA,CAACC,SAAiB,EAAU;IACpC,OAAO,0BAA0BA,SAAS,GAAG;EAC/C;AACF,CAAC,CAAC","ignoreList":[]}

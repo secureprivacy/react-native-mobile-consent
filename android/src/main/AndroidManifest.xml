@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <activity
+      android:name="ai.secureprivacy.mobileconsent.ui.preference_center.SPPreferenceCenter"
+      android:theme="@style/Theme.SecurePrivacyMobile"
+      />
+  </application>
+</manifest>
