@@ -1,4 +1,3 @@
-import React from 'react';
 import { View, Text, TextInput } from 'react-native';
 import { SPColors } from '../styles/colors';
 

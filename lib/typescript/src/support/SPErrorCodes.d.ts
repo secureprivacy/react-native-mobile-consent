@@ -18,6 +18,8 @@ export declare const SPErrorCodes: Readonly<{
     readonly consentEventError: "RN1011";
     readonly authKeyIsNull: "RN1012";
     readonly consentEventDataParsingError: "RN1013";
+    readonly getLastConsentedAtParsingError: "RN1014";
+    readonly getConsentRecollectionReasonParsingError: "RN1015";
 }>;
 /**
  * Type representing all possible Secure Privacy error codes.
