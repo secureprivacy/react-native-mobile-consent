@@ -15,6 +15,15 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift,cpp}"
   s.private_header_files = "ios/**/*.h"
+  s.dependency "SecurePrivacyMobileConsent", "0.3.4"
+
+  # REQUIRED FOR SWIFT PODS
+  s.requires_arc = true
+  s.swift_version = "5.0"
+
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES'
+  }
 
   install_modules_dependencies(s)
 end

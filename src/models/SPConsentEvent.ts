@@ -46,13 +46,18 @@ export class SPConsentEventImpl extends SPBaseModel {
 
   static fromJson(json?: any): SPConsentEventImpl | null {
     try {
+      if (!json) {
+        throw new Error('Provided JSON is undefined');
+      }
+
+      // Accept multiple key formats as different internal SDKs/APIs return different field names
       return new SPConsentEventImpl({
-        code: Number(json?.code ?? 0),
-        applicationId: String(json?.applicationId ?? ''),
-        clientId: String(json?.clientId ?? ''),
-        type: String(json?.type ?? ''),
+        code: Number(json.code ?? 0),
+        applicationId: String(json.applicationId ?? ''),
+        clientId: String(json.clientId ?? ''),
+        type: String(json.type ?? ''),
         status: (() => {
-          switch (String(json?.status ?? '').toLowerCase()) {
+          switch (String(json.status ?? json['consentStatus'] ?? '').toLowerCase()) {
             case SPConsentStatus.PENDING.toLowerCase():
               return SPConsentStatus.PENDING;
             case SPConsentStatus.COLLECTED.toLowerCase():
@@ -64,13 +69,15 @@ export class SPConsentEventImpl extends SPBaseModel {
               return SPConsentStatus.PENDING; // Default to PENDING if unknown
           }
         })(),
-        data: Array.isArray(json?.data)
-          ? json.data.map(SPConsentDataImpl.fromJson)
+        data: Array.isArray(json.data)
+          ? json.data
+            .map(SPConsentDataImpl.fromJson)
+            .filter(Boolean) as SPConsentDataImpl[]
           : [],
       });
     } catch (e) {
       SPLogger.e(TAG, 'Failed to parse SPConsentEvent from JSON: ', json, e);
-      return  null;
+      return null;
     }
   }
 

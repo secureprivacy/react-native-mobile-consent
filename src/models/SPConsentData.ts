@@ -34,14 +34,23 @@ export class SPConsentDataImpl extends SPBaseModel {
     return new SPConsentDataImpl(data);
   }
 
-    static fromJson(json?: any): SPConsentDataImpl | null {
+  static fromJson(json?: any): SPConsentDataImpl | null {
     try {
+      if (!json) {
+        throw new Error('Provided JSON is undefined');
+      }
+
+      // Accept multiple key formats as different internal SDKs/APIs return different field names
+      const subConsents = json.subConsents ?? json['SubConsents'] ?? json['MobilePackageConsents'];
+
       return new SPConsentDataImpl({
-          consentGiven: String(json?.consentGiven ?? ''),
-          category: String(json?.category ?? ''),
-          subConsents: Array.isArray(json?.subConsents)
-            ? json.subConsents.map(SPMobilePackageImpl.fromJson)
-            : [],
+          consentGiven: String(json.consentGiven ?? json['ConsentGiven'] ?? ''),
+          category: String(json.category ?? json['Category'] ?? ''),
+        subConsents: Array.isArray(subConsents)
+          ? subConsents
+            .map(SPMobilePackageImpl.fromJson)
+            .filter(Boolean) as SPMobilePackageImpl[]
+          : [],
         },
       );
     } catch (e) {

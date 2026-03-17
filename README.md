@@ -1,28 +1,28 @@
 # @secureprivacy/react-native-mobile-consent
 
-The **Secure Privacy React Native SDK** provides a unified way to collect, manage, and signal user consent for the **Android** platform.
+The **Secure Privacy React Native SDK** provides a unified way to collect, manage, and signal user consent for the **Android** and **iOS** platforms.
 
 It exposes a simple JavaScript API for consent handling, making your app compliant with GDPR, CCPA, and other privacy regulations.
 
----
+------------------------------------------------------------------------
 
 ## Installation
 
-```sh
+``` sh
 npm install @secureprivacy/react-native-mobile-consent
 ```
 
 For iOS, install pods:
 
-```sh
+``` sh
 cd ios && pod install
 ```
 
----
+------------------------------------------------------------------------
 
 ## Quick Start
 
-```ts
+``` ts
 import { SecurePrivacyMobileConsent } from '@secureprivacy/react-native-mobile-consent';
 
 await SecurePrivacyMobileConsent.initialiseSDK(
@@ -37,7 +37,7 @@ await SecurePrivacyMobileConsent.initialiseSDK(
 );
 ```
 
----
+------------------------------------------------------------------------
 
 ## Full Documentation
 
@@ -45,15 +45,15 @@ Complete setup instructions, configuration guides, event handling, and advanced 
 
 👉 https://docs.secureprivacy.ai/guides/mobile/react-native-sdk/01-setup-and-initialisation/
 
----
+------------------------------------------------------------------------
 
 ## Platform Support
 
 - ✅ Android
-- 🚧 iOS (Coming soon)
+- ✅ iOS
 
----
+------------------------------------------------------------------------
 
 ## License
 
-Apache-2.0
+© Secure Privacy. All rights reserved.

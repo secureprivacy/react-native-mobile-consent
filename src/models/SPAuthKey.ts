@@ -15,8 +15,8 @@ export interface SPAuthKey {
 
 export class SPAuthKeyImpl extends SPBaseModel implements SPAuthKey {
 
-   applicationId: string;
-   secondaryApplicationId?: string;
+  applicationId: string;
+  secondaryApplicationId?: string;
 
   private constructor(key: SPAuthKey) {
     super();

@@ -1,11 +1,13 @@
 {
   "name": "@secureprivacy/react-native-mobile-consent",
-  "version": "0.1.1",
-  "description": "Secure Privacy React Native SDK for Android. Collect, manage, and signal user consent (GDPR, CCPA) in React Native apps.",
+  "version": "0.2.0",
+  "description": "Secure Privacy React Native SDK for Android and iOS. Collect, manage, and signal user consent (GDPR, CCPA) in React Native apps.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
+  "private": false,
   "exports": {
     ".": {
+      "source": "./src/index.tsx",
       "types": "./lib/typescript/src/index.d.ts",
       "default": "./lib/module/index.js"
     },
@@ -15,9 +17,13 @@
     "src",
     "lib",
     "android",
+    "ios",
+    "cpp",
+    "*.podspec",
     "react-native.config.js",
     "README.md",
     "LICENSE",
+    "!ios/build",
     "!android/build",
     "!android/gradle",
     "!android/gradlew",
@@ -28,9 +34,15 @@
     "!**/__mocks__",
     "!**/.*"
   ],
+  "workspaces": [
+    "example"
+  ],
+  "packageManager": "yarn@4.11.0",
   "scripts": {
-    "clean": "del-cli android/build example/android/build",
-    "prepare": "npx react-native-builder-bob build",
+    "example": "yarn workspace @secureprivacy/react-native-mobile-consent-example",
+    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
+    "prepare": "bob build",
+    "watch": "bob build --watch",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\""
   },
@@ -41,16 +53,13 @@
     "cmp",
     "mobile-consent",
     "privacy",
-    "android"
+    "android",
+    "ios"
   ],
   "author": "Secure Privacy <hello@secureprivacy.ai> (https://secureprivacy.ai)",
-  "license": "Apache-2.0",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://secureprivacy.ai/contact-us"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/secureprivacy/react-native-mobile-consent.git"
   },
   "homepage": "https://secureprivacy.ai/",
   "publishConfig": {

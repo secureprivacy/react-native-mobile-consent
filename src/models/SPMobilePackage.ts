@@ -33,11 +33,15 @@ export class SPMobilePackageImpl extends SPBaseModel implements SPMobilePackage 
 
   static fromJson(json?: any): SPMobilePackageImpl | null {
     try {
+      if (!json) {
+        throw new Error('Provided JSON is undefined');
+      }
       return new SPMobilePackageImpl({
-        name: String(json?.name ?? ''),
-        packageId: String(json?.packageId ?? ''),
-        enabled: Boolean(json?.enabled ?? false),
+        name: String(json.name ?? json['PackageName'] ?? json['Name'] ?? ''),
+        packageId: String(json.packageId ?? json['PackageId'] ?? ''),
+        enabled: Boolean(json.enabled ?? json['IsEnabled'] ?? false),
       });
+
     } catch (e) {
       SPLogger.e(TAG, 'Failed to parse SPMobilePackage from JSON: ', json, e);
       return null;

@@ -41,21 +41,60 @@ class ReactNativeMobileConsentModule(reactContext: ReactApplicationContext) :
     return eventHandler!!
   }
 
-  override fun initialiseSDK(payload: String?, promise: Promise) =
-    SPPlatformExecutor.dispatch(
-      SPPlatformMethod.Initialise,
-      payload,
-      promise.wrapper(),
-      ::operation
-    )
+  override fun setLogConfigs(payload: String?, promise: Promise) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.LogConfig,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
 
-  override fun getConsentStatus(payload: String?, promise: Promise) =
-    SPPlatformExecutor.dispatch(
-      SPPlatformMethod.GetConsentStatus,
-      payload,
-      promise.wrapper(),
-      ::operation
-    )
+  override fun getLocale(payload: String?, promise: Promise) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.GetLocale,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
+
+  override fun initialiseSDK(payload: String?, promise: Promise) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.Initialise,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
+
+  override fun getClientId(payload: String?, promise: Promise) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.GetClientId,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
+
+  override fun getConsentStatus(payload: String?, promise: Promise) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.GetConsentStatus,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
+
+  override fun getLastConsentedAt(
+    payload: String?,
+    promise: Promise
+  ) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.GetLastConsentedAt,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
+
+  override fun getConsentRecollectionReason(
+    payload: String?,
+    promise: Promise
+  ) = SPPlatformExecutor.dispatch(
+    SPPlatformMethod.GetConsentRecollectionReason,
+    payload,
+    promise.wrapper(),
+    ::operation
+  )
 
   override fun showConsentBanner(promise: Promise) =
     SPPlatformExecutor.dispatch(
@@ -134,6 +173,9 @@ class ReactNativeMobileConsentModule(reactContext: ReactApplicationContext) :
       put("data", ReactNativeMobileConsentConfig.BUILD_VERSION)
     }
 
+    SPPlatformMethod.LogConfig -> SPPlatformHandler.setLogsConfig(payload)
+      .toJsonObject()
+
     SPPlatformMethod.Initialise -> SPPlatformHandler.initialiseSDK(
       appContext, payload, getOrCreateEventHandler()
     ).let {
@@ -141,14 +183,14 @@ class ReactNativeMobileConsentModule(reactContext: ReactApplicationContext) :
       it.toSPMessage().toJsonObject()
     }
 
+    SPPlatformMethod.GetLocale -> SPPlatformHandler.getLocale(payload)
+      .toJsonObject { locale -> locale }
+
     SPPlatformMethod.GetConsentStatus -> SPPlatformHandler.getConsentStatus(payload)
       .toJsonObject { it?.key }
 
-    SPPlatformMethod.GetClientId -> SPPlatformHandler.getClientId(payload)
-      .toJsonObject { clientId -> clientId }
-
-    SPPlatformMethod.GetLocale -> SPPlatformHandler.getLocale(payload)
-      .toJsonObject { locale -> locale }
+    SPPlatformMethod.GetLastConsentedAt -> SPPlatformHandler.getLastConsentedAt(payload)
+      .toJsonObject { it }
 
     SPPlatformMethod.ShowConsentBanner -> SPPlatformHandler.displayConsentBanner(
       reactApplicationContext.currentActivity
@@ -161,6 +203,9 @@ class ReactNativeMobileConsentModule(reactContext: ReactApplicationContext) :
     SPPlatformMethod.ShowPreferenceCenter -> SPPlatformHandler.displayPreferenceCenter(
       reactApplicationContext.currentActivity, payload
     ).toJsonObject()
+
+    SPPlatformMethod.GetClientId -> SPPlatformHandler.getClientId(payload)
+      .toJsonObject { clientId -> clientId }
 
     SPPlatformMethod.GetPackage -> SPPlatformHandler.getPackage(payload)
       .toJsonObject { it?.toJsonObject() }
