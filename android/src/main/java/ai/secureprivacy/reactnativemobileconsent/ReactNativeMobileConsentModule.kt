@@ -192,6 +192,9 @@ class ReactNativeMobileConsentModule(reactContext: ReactApplicationContext) :
     SPPlatformMethod.GetLastConsentedAt -> SPPlatformHandler.getLastConsentedAt(payload)
       .toJsonObject { it }
 
+    SPPlatformMethod.GetConsentRecollectionReason -> SPPlatformHandler.getConsentRecollectionReason(payload)
+      .toJsonObject { it }
+
     SPPlatformMethod.ShowConsentBanner -> SPPlatformHandler.displayConsentBanner(
       reactApplicationContext.currentActivity
     ).toJsonObject()

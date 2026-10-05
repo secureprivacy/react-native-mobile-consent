@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ActivityIndicator, Text, TouchableOpacity } from 'react-native';
 import { SPColors } from '../styles/colors';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import MainScreen from './screens/main/MainScreen';
 import { SecurePrivacyMobileConsent, SPLogType } from '@secureprivacy/react-native-mobile-consent';
 

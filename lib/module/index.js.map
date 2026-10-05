@@ -1,1 +1,0 @@
-{"version":3,"names":["SecurePrivacyMobileConsent","SPConsentStatus","SPErrorCodes","SPLogType","SPLogger"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":";;AAAA;AACA;AACA;AACA;;AAEA,SAASA,0BAA0B,QAAQ,iCAA8B;AAEzE,SAASC,eAAe,QAAQ,4BAAyB;AASzD,SAASC,YAAY,QAAQ,2BAAwB;AAGrD,SAASC,SAAS,QAAQ,sBAAmB;AAC7C,SAASC,QAAQ,QAAQ,uBAAoB","ignoreList":[]}

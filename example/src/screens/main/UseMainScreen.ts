@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   SecurePrivacyMobileConsent,
+  SPAuthKey,
   SPConsentStatus,
   SPLogger,
+  Subscription,
 } from '@secureprivacy/react-native-mobile-consent';
-import type { SPAuthKey, Subscription } from '@secureprivacy/react-native-mobile-consent';
 import { SPConsentRecollectionReason } from '../../../../src/enums/SPConsentRecollectionReason';
 import { AppConfig } from '../../AppConfig';
 
@@ -45,7 +46,7 @@ export const UseMainScreen = () => {
 
   useEffect(() => {
     if (initialised) {
-      void fetchClientIdsAndLocale();
+      const _ = fetchClientIdsAndLocale();
     }
   }, [initialised]);
   useEffect(() => {

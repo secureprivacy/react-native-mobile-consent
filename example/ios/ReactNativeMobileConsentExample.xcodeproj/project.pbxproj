@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11B017D313ACCB64FC3CC4E4 /* libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 218B6854B5072285313A9758 /* libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		1A4331D40E623E89CCAB50CB /* libPods-ReactNativeMobileConsentExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8A0AB55972A943C1B2B64B /* libPods-ReactNativeMobileConsentExample.a */; };
+		224CBEE4C568AB0A384E06FB /* ReactNativeMobileConsentBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C3C0EC976B3ADDE787DE7F /* ReactNativeMobileConsentBridgeTests.swift */; };
+		5BAE4DFC22111A02C341C2D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529506F5F07C82A57C0A167D /* Foundation.framework */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A2EFEF2FB471999417653D10 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C3C0EC976B3ADDE787DE7F /* ReactNativeMobileConsentBridgeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReactNativeMobileConsentBridgeTests.swift; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactNativeMobileConsentExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeMobileConsentExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeMobileConsentExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeMobileConsentExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReactNativeMobileConsentExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		218B6854B5072285313A9758 /* libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B597D06DB6AE6BC9C9B2100 /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		529506F5F07C82A57C0A167D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5856CA531FFA1B598B421F66 /* ReactNativeMobileConsentExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeMobileConsentExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ReactNativeMobileConsentExample/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeMobileConsentExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8686A69E1DB75295C2A7849E /* Pods-ReactNativeMobileConsentExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMobileConsentExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeMobileConsentExample/Pods-ReactNativeMobileConsentExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8F8A0AB55972A943C1B2B64B /* libPods-ReactNativeMobileConsentExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeMobileConsentExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9796B3F52D34E7B93C55AC5B /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F86C8EE9D5FE53C1FE4BF41D /* Pods-ReactNativeMobileConsentExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeMobileConsentExample.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeMobileConsentExample/Pods-ReactNativeMobileConsentExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +42,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4331D40E623E89CCAB50CB /* libPods-ReactNativeMobileConsentExample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3EA1A88D02259D8D371371 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BAE4DFC22111A02C341C2D3 /* Foundation.framework in Frameworks */,
+				11B017D313ACCB64FC3CC4E4 /* libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,8 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				8F8A0AB55972A943C1B2B64B /* libPods-ReactNativeMobileConsentExample.a */,
+				C28CCE14D770ACF527E038D5 /* iOS */,
+				218B6854B5072285313A9758 /* libPods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +95,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				B751172D20BFC9CE496C6B65 /* ReactNativeMobileConsentExampleTests */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -85,17 +106,37 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeMobileConsentExample.app */,
+				5856CA531FFA1B598B421F66 /* ReactNativeMobileConsentExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		B751172D20BFC9CE496C6B65 /* ReactNativeMobileConsentExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				08C3C0EC976B3ADDE787DE7F /* ReactNativeMobileConsentBridgeTests.swift */,
+			);
+			name = ReactNativeMobileConsentExampleTests;
+			path = ReactNativeMobileConsentExampleTests;
+			sourceTree = SOURCE_ROOT;
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				8686A69E1DB75295C2A7849E /* Pods-ReactNativeMobileConsentExample.debug.xcconfig */,
 				F86C8EE9D5FE53C1FE4BF41D /* Pods-ReactNativeMobileConsentExample.release.xcconfig */,
+				9796B3F52D34E7B93C55AC5B /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.release.xcconfig */,
+				3B597D06DB6AE6BC9C9B2100 /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.debug.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C28CCE14D770ACF527E038D5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				529506F5F07C82A57C0A167D /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +162,26 @@
 			productName = ReactNativeMobileConsentExample;
 			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeMobileConsentExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B701895FD5FC3BDF67B6E1FB /* ReactNativeMobileConsentExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD9135CC553503D3EEE2943 /* Build configuration list for PBXNativeTarget "ReactNativeMobileConsentExampleTests" */;
+			buildPhases = (
+				66637B57A574C55EF22C841C /* [CP] Check Pods Manifest.lock */,
+				848BF1976CDE4EB6FF98EA7E /* Sources */,
+				BA3EA1A88D02259D8D371371 /* Frameworks */,
+				36A1EC09C313C8FA94213D4A /* Resources */,
+				CAA8E633AFD5920B4A3640B8 /* [CP] Embed Pods Frameworks */,
+				36C38ABB19853B803337EB1C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactNativeMobileConsentExampleTests;
+			productName = ReactNativeMobileConsentExampleTests;
+			productReference = 5856CA531FFA1B598B421F66 /* ReactNativeMobileConsentExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeMobileConsentExample */,
+				B701895FD5FC3BDF67B6E1FB /* ReactNativeMobileConsentExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -161,6 +223,13 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A2EFEF2FB471999417653D10 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A1EC09C313C8FA94213D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +251,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"\\\"$WITH_ENVIRONMENT\\\" \\\"$REACT_NATIVE_XCODE\\\"\"\n";
+		};
+		36C38ABB19853B803337EB1C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66637B57A574C55EF22C841C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		75DF4300FE5A8B7F7B316B73 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -239,6 +347,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample/Pods-ReactNativeMobileConsentExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CAA8E633AFD5920B4A3640B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests/Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,6 +372,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		848BF1976CDE4EB6FF98EA7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				224CBEE4C568AB0A384E06FB /* ReactNativeMobileConsentBridgeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +437,41 @@
 				PRODUCT_NAME = ReactNativeMobileConsentExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		5B8769BF8E3A2501CEA453C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B597D06DB6AE6BC9C9B2100 /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.secureprivacy.reactnativemobileconsent.example.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		684512D1019B9E14885A8704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9796B3F52D34E7B93C55AC5B /* Pods-ReactNativeMobileConsentExample-ReactNativeMobileConsentExampleTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				PRODUCT_BUNDLE_IDENTIFIER = ai.secureprivacy.reactnativemobileconsent.example.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -470,6 +638,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD9135CC553503D3EEE2943 /* Build configuration list for PBXNativeTarget "ReactNativeMobileConsentExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				684512D1019B9E14885A8704 /* Release */,
+				5B8769BF8E3A2501CEA453C4 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

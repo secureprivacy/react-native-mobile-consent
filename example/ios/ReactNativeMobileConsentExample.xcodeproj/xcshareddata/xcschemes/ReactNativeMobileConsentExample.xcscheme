@@ -38,6 +38,16 @@
                ReferencedContainer = "container:ReactNativeMobileConsentExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B701895FD5FC3BDF67B6E1FB"
+               BuildableName = "ReactNativeMobileConsentExampleTests.xctest"
+               BlueprintName = "ReactNativeMobileConsentExampleTests"
+               ReferencedContainer = "container:ReactNativeMobileConsentExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
